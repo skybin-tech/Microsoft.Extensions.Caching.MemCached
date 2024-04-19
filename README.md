@@ -31,7 +31,7 @@ This repository demonstrates how to integrate Memcache as an implementation of t
     public void ConfigureServices(IServiceCollection services)
     {
         // Add Memcache distributed cache
-        var client = services.AddMemCache(TimeSpan.FromSeconds(30), "cache.skybin.io:11211"); 
+        var client = services.AddMemCache(TimeSpan.FromSeconds(30), "[ServerUrl]:[ServerPort]"); 
 
         // Other service configurations...
         //Store DateProtection Keys
