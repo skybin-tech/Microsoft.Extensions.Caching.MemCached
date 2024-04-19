@@ -15,7 +15,7 @@ This repository demonstrates how to integrate Memcache as an implementation of t
 
 ## Installation
 
-1. Install the `Microsoft.Extensions.Caching.Memcached` package from NuGet:
+1. Install the `Skyb.Extensions.Caching.Memcached` package from NuGet:
 
     ```bash
     dotnet add package Skyb.Extensions.Caching.Memcached
