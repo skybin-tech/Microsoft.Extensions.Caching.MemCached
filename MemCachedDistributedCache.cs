@@ -6,12 +6,12 @@ using System.Text;
 
 namespace Skyb.Extensions.Caching.MemCached
 {
-    public class MemCacheDistributedCache : IDistributedCache
+    public class MemCachedDistributedCache : IDistributedCache
     {
         private readonly IMemcachedClient _client;
 
         private static readonly TimeSpan Default = TimeSpan.FromSeconds(30);
-        public MemCacheDistributedCache(IMemcachedClient client)
+        public MemCachedDistributedCache(IMemcachedClient client)
         {
             _client = client;
         }
@@ -22,7 +22,7 @@ namespace Skyb.Extensions.Caching.MemCached
         }
 
 
-        public async Task<byte[]> GetAsync(string key, CancellationToken token = default)
+        public async Task<byte[]?> GetAsync(string key, CancellationToken token = default)
         {
             return await _client.GetAsync<byte[]>(key);
         }
