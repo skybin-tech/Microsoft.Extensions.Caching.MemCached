@@ -10,28 +10,15 @@ This repository demonstrates how to integrate Memcache as an implementation of t
 
 ## Prerequisites
 
-- .NET Core SDK (version X.X or higher)
-- Memcache server (version X.X or higher)
+- .NET Core SDK (version 5.0 or higher)
+- Memcache server (Any)
 
 ## Installation
 
 1. Install the `Microsoft.Extensions.Caching.Memcached` package from NuGet:
 
     ```bash
-    dotnet add package Microsoft.Extensions.Caching.Memcached
-    ```
-
-2. Configure the Memcache server connection settings in your application's configuration file (`appsettings.json` or `appsettings.{Environment}.json`):
-
-    ```json
-    {
-      "Memcached": {
-        "Servers": [
-          "memcache-server1:11211",
-          "memcache-server2:11211"
-        ]
-      }
-    }
+    dotnet add package Skyb.Extensions.Caching.Memcached
     ```
 
 ## Usage
@@ -39,7 +26,7 @@ This repository demonstrates how to integrate Memcache as an implementation of t
 1. Add Memcache caching to the services collection in your application's `Startup.cs` file:
 
     ```csharp
-    using Microsoft.Extensions.Caching.Memcached;
+    using Skyb.Extensions.Caching.Memcached;
 
     public void ConfigureServices(IServiceCollection services)
     {
