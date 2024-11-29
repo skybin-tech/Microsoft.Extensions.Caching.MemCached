@@ -1,11 +1,11 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>net5.0;net6.0;net7.0;net8.0</TargetFrameworks>
+    <TargetFrameworks>net5.0;net6.0;net7.0;net8.0;net9.0</TargetFrameworks>
 	 <LangVersion>10.0</LangVersion>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <Version>1.0.1</Version>
+    <Version>1.0.2</Version>
     <Authors>SkyBin®</Authors>
     <Company>SkyBin® Technology Private Limited</Company>
     <Description>Memcached Implementation for IDistributed Cache
@@ -27,11 +27,11 @@ This is not provided by Microsoft</Description>
 
   <ItemGroup>
     <PackageReference Include="Enyim.Memcached2" Version="0.6.8" />
-    <PackageReference Include="Microsoft.AspNetCore.DataProtection" Version="8.0.4" />
+    <PackageReference Include="Microsoft.AspNetCore.DataProtection" Version="8.0.*" />
     <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
-    <PackageReference Include="Microsoft.Extensions.Caching.Abstractions" Version="8.0.0" />
-    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.1" />
-    <PackageReference Include="Microsoft.Extensions.Options" Version="8.0.2" />
+    <PackageReference Include="Microsoft.Extensions.Caching.Abstractions" Version="9.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="9.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Options" Version="9.0.0" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
   </ItemGroup>
 
